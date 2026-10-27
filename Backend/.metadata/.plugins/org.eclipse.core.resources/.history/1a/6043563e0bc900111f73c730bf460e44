@@ -1,0 +1,24 @@
+spring.application.name=CrudService
+
+server.port=8001
+spring.application.name=CrudService
+server.port=8001
+
+# PostgreSQL Database
+spring.datasource.url=jdbc:postgresql://localhost:5432/soadb
+spring.datasource.username=postgres
+spring.datasource.password=your_password
+spring.datasource.driver-class-name=org.postgresql.Driver
+
+# JPA Configuration
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.format_sql=true
+
+# Eureka Client
+eureka.client.service-url.defaultZone=http://localhost:8761/eureka/
+eureka.client.register-with-eureka=true
+eureka.client.fetch-registry=true
+
+# Swagger
+springdoc.swagger-ui.path=/swagger-ui.html

@@ -1,0 +1,4 @@
+package com.klef.soa.exam.service;
+
+public interface RecyclingCenterService {
+}

@@ -1,0 +1,38 @@
+package com.klef.soa.exam.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
+import com.klef.soa.exam.entity.RecyclingCenter;
+import com.klef.soa.exam.service.RecyclingCenterService;
+
+@RestController
+@RequestMapping("/")
+public class RecyclingCenterController {
+
+    @Autowired
+    private RecyclingCenterService service;
+    public 
+
+    @GetMapping("/")
+    public String home() {
+        return "CRUD Service is running";
+    }
+
+    @PostMapping("/Add")
+    public String addCenter(@RequestBody RecyclingCenter center) {
+        return service.addCenter(center);
+    }
+
+    @GetMapping("/DisplayAll")
+    public List<RecyclingCenter> displayAll() {
+        return service.displayAll();
+    }
+
+    @DeleteMapping("/Delete/{id}")
+    public String deleteCenter(@PathVariable Long id) {
+        return service.deleteCenter(id);
+    }
+}

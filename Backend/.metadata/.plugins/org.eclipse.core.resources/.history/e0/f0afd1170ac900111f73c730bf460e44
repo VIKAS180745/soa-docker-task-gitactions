@@ -1,0 +1,38 @@
+package com.klef.soa.exam.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.klef.soa.exam.entity.RecyclingCenter;
+import com.klef.soa.exam.repository.RecyclingCenterRepository;
+
+@Service
+public class RecyclingCenterServiceImpl implements RecyclingCenterService {
+
+    @Autowired
+    private RecyclingCenterRepository repository;
+    
+    public RecyclingCenterServiceImpl(R)
+
+    @Override
+    public String addCenter(RecyclingCenter center) {
+        repository.save(center);
+        return "Recycling center added successfully";
+    }
+
+    @Override
+    public List<RecyclingCenter> displayAll() {
+        return repository.findAll();
+    }
+
+    @Override
+    public String deleteCenter(Long id) {
+        if (repository.existsById(id)) {
+            repository.deleteById(id);
+            return "Recycling center deleted successfully";
+        }
+        return "Recycling center not found";
+    }
+}

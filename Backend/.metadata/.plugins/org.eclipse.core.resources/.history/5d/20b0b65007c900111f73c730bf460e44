@@ -1,0 +1,33 @@
+package com.klef.soa.exam.entity;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name="recyclingcentre")
+public class RecyclingCenter {
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
+	
+	private String centerName;
+	private String materialType;
+	private Double dailyCapacityKg;
+	Boolean open;
+	
+	public RecyclingCenter(Long id, String centerName, String materialType, Double dailyCapacityKg, Boolean open) {
+		super();
+		this.id = id;
+		this.centerName = centerName;
+		this.materialType = materialType;
+		this.dailyCapacityKg = dailyCapacityKg;
+		this.open = open;
+	}
+	
+	
+	
+
+}

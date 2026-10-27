@@ -1,0 +1,188 @@
+
+:root {
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  margin: 0;
+  background: #f4f7f4;
+  color: #20352a;
+}
+
+.app-navbar {
+  background: #123e2a;
+  padding: 15px 0;
+}
+
+.navbar-brand {
+  font-size: 1.4rem;
+  letter-spacing: -0.4px;
+}
+
+.nav-link {
+  color: #e0eee5;
+}
+
+.nav-link:hover {
+  color: #ffffff;
+}
+
+.hero {
+  padding: 78px 0 84px;
+  color: white;
+  background: linear-gradient(120deg, #124b32, #278354);
+}
+
+.hero-tag {
+  display: inline-block;
+  padding: 7px 12px;
+  margin-bottom: 16px;
+  border: 1px solid #b7e2c7;
+  border-radius: 30px;
+  font-size: 0.75rem;
+  letter-spacing: 1.6px;
+}
+
+.hero h1 {
+  max-width: 760px;
+  font-size: clamp(2.2rem, 5vw, 3.6rem);
+  font-weight: 750;
+  letter-spacing: -1.5px;
+}
+
+.hero p {
+  max-width: 580px;
+  color: #e2f2e8;
+  font-size: 1.08rem;
+}
+
+.content-card {
+  padding: 30px;
+  background: white;
+  border: 1px solid #e0e9e1;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgb(25 70 42 / 5%);
+}
+
+.section-heading {
+  margin-bottom: 26px;
+}
+
+.section-heading > span {
+  color: #25814d;
+  font-size: 0.75rem;
+  font-weight: 750;
+  letter-spacing: 1.4px;
+}
+
+.section-heading h2 {
+  margin-top: 8px;
+  font-size: 1.65rem;
+  font-weight: 750;
+}
+
+.section-heading p {
+  margin-bottom: 0;
+  color: #6c7b70;
+}
+
+.form-label {
+  font-weight: 600;
+}
+
+.form-control,
+.form-select {
+  min-height: 45px;
+  border-color: #d8e2da;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #39875a;
+  box-shadow: 0 0 0 0.2rem rgb(57 135 90 / 13%);
+}
+
+.btn-success {
+  background: #247649;
+  border-color: #247649;
+}
+
+.empty-state {
+  padding: 45px 15px;
+  text-align: center;
+  background: #f7faf7;
+  border: 1px dashed #ccdbce;
+  border-radius: 12px;
+}
+
+.empty-icon {
+  margin-bottom: 10px;
+  color: #25814d;
+  font-size: 2.6rem;
+}
+
+.empty-state p {
+  margin-bottom: 0;
+  color: #718074;
+}
+
+.table thead th {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  background: #edf5ee;
+  color: #315640;
+  white-space: nowrap;
+}
+
+.status-pill {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 30px;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.is-open {
+  color: #176c3a;
+  background: #dff5e5;
+}
+
+.is-closed {
+  color: #9b3434;
+  background: #fbe5e5;
+}
+
+.app-footer {
+  padding: 28px 0;
+  background: #123e2a;
+  color: #e5f2e9;
+  text-align: center;
+}
+
+.app-footer p {
+  color: #bcd6c5;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 576px) {
+  .hero {
+    padding: 55px 0;
+  }
+
+  .content-card {
+    padding: 20px 16px;
+  }
+
+  .navbar-brand {
+    font-size: 1.1rem;
+  }
+
+  .navbar-nav {
+    gap: 8px !important;
+  }
+}

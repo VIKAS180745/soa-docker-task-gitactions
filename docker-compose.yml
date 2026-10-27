@@ -1,0 +1,24 @@
+
+services:
+  backend:
+    build:
+      context: ./Backend/CrudService
+    container_name: recycling-backend
+    ports:
+      - "8001:8001"
+    environment:
+      DB_URL: jdbc:postgresql://host.docker.internal:5433/exam_2400032772
+      DB_USERNAME: postgres
+      DB_PASSWORD: root
+      EUREKA_URL: http://host.docker.internal:8761/eureka/
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+  frontend:
+    build:
+      context: ./frontend
+    container_name: recycling-frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend

@@ -1,0 +1,27 @@
+package com.klef.soa.exam.service;
+
+import java.util.List;
+
+import com.klef.soa.exam.entity.RecyclingCenter;
+
+public class RecyclingCenterServiceImpl implements RecyclingCenterService {
+
+	@Override
+	public String addCenter(RecyclingCenter center) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<RecyclingCenter> displayAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String deleteCenter(Long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
