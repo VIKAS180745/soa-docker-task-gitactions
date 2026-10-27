@@ -6,6 +6,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
+
 import io.swagger.v3.oas.annotations.media.Schema;
 
 @Entity

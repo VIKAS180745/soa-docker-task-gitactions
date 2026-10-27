@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Users\S VIKAS SRINIVAS\OneDrive\Desktop\SOA\examworkspace\Backend\CrudService"/>
 			<item value="C:\Users\S VIKAS SRINIVAS\Downloads\Eureka Server"/>
 		</list>
 		<list key="projectNameTemplate">
