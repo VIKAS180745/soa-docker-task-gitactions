@@ -18,3 +18,7 @@ target/
 # IDE settings
 .idea/
 .vscode/
+
+# Eclipse workspace files
+Backend/.metadata/
+**/.metadata/
