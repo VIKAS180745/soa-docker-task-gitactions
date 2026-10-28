@@ -12,7 +12,6 @@ import io.swagger.v3.oas.annotations.media.Schema;
 @Entity
 @Table(name = "recyclingcenter")
 public class RecyclingCenter {
-	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Schema(accessMode = Schema.AccessMode.READ_ONLY)

@@ -1,1 +1,13 @@
-/.metadata/
+# Eclipse workspace
+.metadata/
+Backend/.metadata/
+**/.metadata/
+
+# Java build files
+**/target/
+**/bin/
+
+# IDE files
+**/.classpath
+**/.project
+**/.settings/

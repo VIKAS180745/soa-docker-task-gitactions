@@ -1,3 +1,0 @@
-spring.application.name=CrudService
-
-server.port=8001
